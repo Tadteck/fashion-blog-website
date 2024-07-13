@@ -6,7 +6,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
+import { Facebook, Instagram, Menu, Twitter } from "@mui/icons-material";
 
 function App() {
   const MenuItems = [
@@ -26,13 +26,17 @@ function App() {
             <Instagram />
             <Twitter />
           </Box>
-          <Box sx={{ display: "flex", gap: "1rem" }}>
-            {MenuItems.map((items) => (
-              <Typography sx={{ cursor: "pointer" }}>{items.Name}</Typography>
-            ))}
+          <Box sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
+            <Box sx={{ display: "flex", gap: "1rem" }}>
+              {MenuItems.map((items) => (
+                <Typography sx={{ cursor: "pointer" }}>{items.Name}</Typography>
+              ))}
+            </Box>
           </Box>
+
           <Box sx={{ display: "flex", gap: "1rem" }}>
             <InputBase placeholder="search" sx={{color:"white"}} />
+            <Menu sx={{ display: { xs: "block", sm: "block", md: "none" } }} />
           </Box>
         </Toolbar>
       </AppBar>
