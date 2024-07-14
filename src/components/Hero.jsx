@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import offwhite from "../static/offwhite.jpg";
+import fashion2 from "../static/fashion2.jpg";
 
 const Hero = () => {
   return (
@@ -15,7 +15,19 @@ const Hero = () => {
         >
           the Beauty of fashion is defined by the what people visualize
         </Typography>
-        <Box sx={{ backgroundImage: "url(${offwhite})" }}></Box>
+        <Box sx={{ marginTop: "1rem" }}>
+          <img src={fashion2} alt="fashion2" height={550} width="100%" />
+          <Box
+            sx={{
+              backgroundColor: "white",
+              opacity: "0.8",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Typography>Trending Styles</Typography>
+          </Box>
+        </Box>
       </Box>
     </>
   );
