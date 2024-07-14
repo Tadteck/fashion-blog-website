@@ -3,10 +3,17 @@ import {
   Box,
   InputBase,
   Link,
+  MenuItem,
   Toolbar,
   Typography,
 } from "@mui/material";
-import { Facebook, Instagram, Menu, Twitter } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  Menu,
+  Menu as MenuIcon,
+  Twitter,
+} from "@mui/icons-material";
 
 function App() {
   const MenuItems = [
@@ -35,9 +42,26 @@ function App() {
           </Box>
 
           <Box sx={{ display: "flex", gap: "1rem" }}>
-            <InputBase placeholder="search" sx={{color:"white"}} />
-            <Menu sx={{ display: { xs: "block", sm: "block", md: "none" } }} />
+            <InputBase placeholder="search" sx={{ color: "white" }} />
+            <MenuIcon
+              sx={{ display: { xs: "block", sm: "block", md: "none" } }}
+            />
           </Box>
+          <Menu
+            id="demo-positioned-menu"
+            aria-labelledby="demo-positioned-button"
+            open={true}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+          >
+            <MenuItem>Profile</MenuItem>
+          </Menu>
         </Toolbar>
       </AppBar>
     </>
