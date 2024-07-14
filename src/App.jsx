@@ -1,69 +1,11 @@
-import {
-  AppBar,
-  Box,
-  InputBase,
-  Link,
-  MenuItem,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import {
-  Facebook,
-  Instagram,
-  Menu,
-  Menu as MenuIcon,
-  Twitter,
-} from "@mui/icons-material";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const MenuItems = [
-    { Name: "Home", Link: "/" },
-    { Name: "Products", Link: "#" },
-    { Name: "Portfolio", Link: "#" },
-    { Name: "Blog", Link: "#" },
-    { Name: "Contact Us", Link: "#" },
-  ];
-
   return (
     <>
-      <AppBar sx={{ background: "black" }}>
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={{ gap: "1rem", display: "flex" }}>
-            <Facebook />
-            <Instagram />
-            <Twitter />
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
-            <Box sx={{ display: "flex", gap: "1rem" }}>
-              {MenuItems.map((items) => (
-                <Typography sx={{ cursor: "pointer" }}>{items.Name}</Typography>
-              ))}
-            </Box>
-          </Box>
-
-          <Box sx={{ display: "flex", gap: "1rem" }}>
-            <InputBase placeholder="search" sx={{ color: "white" }} />
-            <MenuIcon
-              sx={{ display: { xs: "block", sm: "block", md: "none" } }}
-            />
-          </Box>
-          <Menu
-            id="demo-positioned-menu"
-            aria-labelledby="demo-positioned-button"
-            open={true}
-            anchorOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-          >
-            <MenuItem>Profile</MenuItem>
-          </Menu>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
+      <Hero />
     </>
   );
 }
