@@ -15,17 +15,25 @@ const Hero = () => {
         >
           the Beauty of fashion is defined by the what people visualize
         </Typography>
-        <Box sx={{ marginTop: "1rem" }}>
+        <Box
+          sx={{
+            marginTop: "1rem",
+          }}
+        >
           <img src={fashion2} alt="fashion2" height={550} width="100%" />
+
           <Box
             sx={{
               backgroundColor: "white",
               opacity: "0.8",
-              display: "flex",
-              justifyContent: "center",
             }}
           >
-            <Typography>Trending Styles</Typography>
+            <Typography variant="h3" align="center">
+              Trending Styles
+            </Typography>
+            <Typography variant="h4" align="center">
+              Life is boring without fashion
+            </Typography>
           </Box>
         </Box>
       </Box>
