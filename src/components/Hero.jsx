@@ -18,22 +18,34 @@ const Hero = () => {
         <Box
           sx={{
             marginTop: "1rem",
+            backgroundImage: `url(${fashion2})`,
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "white",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: 600,
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
-          <img src={fashion2} alt="fashion2" height={550} width="100%" />
-
-          <Box
-            sx={{
-              backgroundColor: "white",
-              opacity: "0.8",
-            }}
-          >
-            <Typography variant="h3" align="center">
-              Trending Styles
-            </Typography>
-            <Typography variant="h4" align="center">
-              Life is boring without fashion
-            </Typography>
+          <Box sx={{ width: "80%", padding: 20 }}>
+            <Box
+              sx={{
+                backgroundColor: "white",
+                opacity: "0.8",
+              }}
+            >
+              <Typography variant="h3" align="center">
+                Trending Styles
+              </Typography>
+              <Typography variant="h4" align="center">
+                Life is boring without fashion
+              </Typography>
+              <Typography variant="h4" align="center">
+                we love to change your style
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Box>
