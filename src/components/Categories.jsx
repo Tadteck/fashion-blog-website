@@ -31,7 +31,7 @@ const Categories = () => {
             backgroundColor: "white",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: 200,
+            height: 250,
             width: "100%",
           }}
         >
@@ -46,7 +46,7 @@ const Categories = () => {
             backgroundColor: "white",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: 200,
+            height: 250,
             width: "100%",
           }}
         >
@@ -61,7 +61,7 @@ const Categories = () => {
             backgroundColor: "white",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: 200,
+            height: 250,
             width: "100%",
           }}
         >
